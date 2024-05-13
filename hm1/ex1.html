@@ -1,0 +1,73 @@
+<!-- Завдання 1. Створити html файл з формою для додавання викладача. 
+    Форма повинна містити наступні поля: Повне ім’я, стать, дата народження, 
+    email, телефон, бажаний колір фону, країна, місто, коментар.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lecturer Form</h1>
+    </header>
+    <main>
+        <form action="" method="get">
+            <section>
+                <label for="name">Enter your name:</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </section>
+            <section>
+                <label for="surname">Enter your surname:</label>
+                <input type="text" name="surname" id="surname" placeholder="Surname" required />
+            </section>
+            <section>
+                <label for="lastname">Enter your lastname:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Lastname" required />
+            </section>
+            <section>
+                <label for="sex-select">Enter your sex:</label>
+                <select name="sex" id="sex-select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="intersex">Intersex</option>
+                </select>
+            </section>
+            <section>
+                <label for="birthday">Enter your birthday:</label>
+                <input type="date" name="birthday" id="birthday" required />
+            </section>
+            <section>
+                <label for="email">Enter your email:</label>
+                <input type="email" name="Email" id="email" placeholder="Email" required />
+            </section>
+            <section>
+                <label for="telephone">Enter your telephone:</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="Telephone" required />
+            </section>
+            <section>
+                <label for="color">Enter your color:</label>
+                <input type="color" name="color" id="color" style="background-color: inherit;" required />
+            </section>
+            <section>
+                <label for="country">Enter your country:</label>
+                <input type="text" name="country" id="country" placeholder="Country" required />
+            </section>
+            <section>
+                <label for="city">Enter your city:</label>
+                <input type="text" name="city" id="city" placeholder="City" required />
+            </section>
+            <section>
+                <label for="additional">Enter additional info:</label>
+                <textarea name="additional" id="additional" placeholder="Additional information"></textarea>
+            </section>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
