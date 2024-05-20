@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyList</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <main>
+        <section class="search-bar">
+            <label for="search-bar" id="search-bar-label">Пошук товарів</label>
+            <input type="text" name="search-bar" id="search-bar" placeholder="Назва товару">
+            <button type="submit" data-tooltip="Додати">Додати</button>
+        </section>
+        <section class="cart-item">
+            <article><span class="bought-item">Помідори</span></article>
+            <article><span class="amount-of-items" id="sole-item">2</span></article>
+            <article><button class="bought-button" data-tooltip="Не куплено">Не куплено</button></article>
+        </section>
+        <section class="cart-item">
+            <article><span class="not-bought-item">Печиво</span></article>
+            <article>
+                <button class="decrease-amount" data-tooltip="Зменшити">-</button>
+                <span class="amount-of-items">2</span>
+                <button class="increase-amount" data-tooltip="Збільшити">+</button>
+            </article>
+            <article>
+                <button class="bought-button" data-tooltip="Куплено">Куплено</button>
+                <button class="cancel" data-tooltip="Відмінити">✖</button>
+            </article>
+        </section>
+        <section class="cart-item">
+            <article><span class="not-bought-item">Сир</span></article>
+            <article>
+                <button class="decrease-amount" data-tooltip="Зменшити" disabled>-</button>
+                <span class="amount-of-items">1</span>
+                <button class="increase-amount" data-tooltip="Збільшити">+</button>
+            </article>
+            <article>
+                <button class="bought-button" data-tooltip="Куплено">Куплено</button>
+                <button class="cancel" data-tooltip="Відмінити">✖</button>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <section class="items-info">
+            <article class="items-state">
+                <span>Залишилося</span>
+            </article>
+            <article class="not-bought-items">
+                <span class="product-item">
+                    Печиво
+                    <span class="amount">2</span>
+                </span>
+                <span class="product-item">
+                    Сир
+                    <span class="amount">1</span>
+                </span>
+            </article>
+        </section>
+        <section class="items-info">
+            <article class="items-state">
+                <span>Куплено</span>
+            </article>
+            <article class="bought-items">
+                <span class="product-item">
+                    Помідори
+                    <span class="amount">2</span>
+                </span>
+            </article>
+        </section>
+    </aside>
+    <footer>
+        <section class="badge">
+            <article class="buy-list">
+                <span>Buy List</span>
+            </article>
+            <article class="author">
+                <span class="author-name"> Created By: <br>
+                    Булавіна Дарія</span>
+            </article>
+        </section>
+    </footer>
+</body>
+
+</html>
